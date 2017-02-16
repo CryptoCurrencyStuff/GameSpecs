@@ -14,13 +14,43 @@
 ```
 { "login": { 
   "name": "Username",
-  "password: "secret123"
+  "password: "secret123",
+  "2fa_code": 102837
 } }
 ```
 
 ##### Logout
 ```
 { "logout": { } }
+```
+
+##### Game Configuration
+```
+{ "config": { } }
+```
+
+##### Game Stats
+```
+{ "stats": { } }
+```
+
+##### Account Info
+```
+{ "user_info": { }
+```
+
+##### Account Stats
+```
+{ "user_stats": { 
+  "user": "LongCrab" 
+} }
+```
+
+##### Bet Info
+```
+{ "bet_info": { 
+  "bet_id": 1234567 
+} }
 ```
 
 ##### Roll
@@ -42,4 +72,23 @@
 ```
 { "reveal_seed": { } }
 ```
+##### Current Seed Info
+```
+{ "curr_seed_info": { } }
+```
+
+##### Previous Seed Info
+```
+{ "prev_seed_info": { } }
+```
+
+##### Tip
+```
+{ "tip": {
+  "user": "LongCrab",
+  "amount": 666666,
+  "is_public": false
+} }
+```
+
 ### Chat
