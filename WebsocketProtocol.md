@@ -21,7 +21,7 @@
 } }
 ```
 
-##### response:
+##### response
 ```
 {"login":{"success":true,"token":"c51a5d55d0c5fe9ade0c4a1a97a56f43"}}"
 ```
@@ -79,6 +79,7 @@
 ```
 
 #### Roll
+##### request
 ```
 { "roll": { 
   "amount": 100000,
@@ -86,6 +87,12 @@
   "condition_high": false
 } }
 ```
+
+##### response
+```
+{"roll":{"success":true,"bet_id":211,"username":"asdf22","server_key_hash":"dc30c107b1f95c74ec1b5b1f8ff4e1b16fad5f5c7a25c68198e8a4ed76f36996","client_key":"asdasdd","nonce":206,"roll":2654,"target":5000,"condition_high":false,"won":true,"amount":0,"profit":0.000000,"balance":102230000.000000}}
+```
+
 #### Set Seed
 ```
 { "set_seed": { 
@@ -126,6 +133,20 @@
   "amount": 666666,
   "is_public": false
 } }
+```
+
+
+#### All bets stream
+##### response
+```
+"all_bets":{"bet_id":211,"username":"asdf22","server_key_hash":"dc30c107b1f95c74ec1b5b1f8ff4e1b16fad5f5c7a25c68198e8a4ed76f36996","client_key":"asdasdd","nonce":206,"roll":2654,"target":5000,"condition_high":false,"amount":0,"profit":0.000000}}
+```
+
+#### High rollers stream
+##### response
+```
+"high_rollers":{"bet_id":211,"username":"asdf22","server_key_hash":"dc30c107b1f95c74ec1b5b1f8ff4e1b16fad5f5c7a25c68198e8a4ed76f36996","client_key":"asdasdd","nonce":206,"roll":2654,"target":5000,"condition_high":false,"amount":0,"profit":0.000000}}
+
 ```
 
 ### Chat
